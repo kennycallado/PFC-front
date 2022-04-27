@@ -57,9 +57,11 @@ export class AppComponent implements OnInit {
 
     /* actualizar disponibilidad */
     this.apiSrv.getAvailability(this.date).subscribe(res => {
-      this.tables = []
-      this.changeDetectorRef.detectChanges();
-      this.tables = res
+      // this.tables = []
+      // /* no está detectando los cambios... */
+      // this.changeDetectorRef.detectChanges()
+      // this.tables = res
+      window.location.href = "/"
     })
   }
 
@@ -69,7 +71,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.apiSrv.getAvailability(this.date).subscribe(response => {
-      this.tables = response;
+      this.tables = response
     })
   }
 }
