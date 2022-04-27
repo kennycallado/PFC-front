@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
       return
     }
 
-    /* enviar reserva */
+    /* prepara los datos */
     let booking: Booking = {
       tables_id: this.table.id,
       username: form.value.username,
@@ -48,6 +48,7 @@ export class AppComponent implements OnInit {
       date_book: this.date
     }
 
+    /* enviar reserva */
     this.apiSrv.sendBooking(booking).subscribe(res => {
       /* mostrar confirmación */
       window.alert("Su reserva ha sido procesada.\n\tReserva número: " + res.id + " \n\nGracias")
@@ -56,12 +57,11 @@ export class AppComponent implements OnInit {
     })
 
     /* actualizar disponibilidad */
+    this.tables = []
     this.apiSrv.getAvailability(this.date).subscribe(res => {
-      // this.tables = []
       // /* no está detectando los cambios... */
       // this.changeDetectorRef.detectChanges()
-      // this.tables = res
-      window.location.href = "/"
+      this.tables = res
     })
   }
 
