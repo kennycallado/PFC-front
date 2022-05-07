@@ -1,5 +1,5 @@
 import { formatDate } from '@angular/common';
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Table } from './models/table';
 import { Booking } from './models/booking';
@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   tables!: Table[]
   table!: Table
 
-  constructor(private apiSrv: ApiService, private changeDetectorRef: ChangeDetectorRef) { }
+  constructor(private apiSrv: ApiService) { }
 
   onDateChange(event: Event) {
     this.date = (<HTMLInputElement>event.target).value
@@ -54,15 +54,17 @@ export class AppComponent implements OnInit {
       window.alert("Su reserva ha sido procesada.\n\tReserva número: " + res.id + " \n\nGracias")
       /* cerrar modal */
       close.click();
+
+      /* actualizar disponibilidad */
+      this.tables = []
+
+      this.apiSrv.getAvailability(this.date).subscribe(res => {
+        // /* no está detectando los cambios... */
+        // this.changeDetectorRef.detectChanges()
+        this.tables = res
+      })
     })
 
-    /* actualizar disponibilidad */
-    this.tables = []
-    this.apiSrv.getAvailability(this.date).subscribe(res => {
-      // /* no está detectando los cambios... */
-      // this.changeDetectorRef.detectChanges()
-      this.tables = res
-    })
   }
 
   completeDialog(selected: Table) {
