@@ -1,0 +1,12 @@
+svg:hover {
+    color: #4180e5;
+}
+
+.logo-transp {
+    opacity: 0.7;
+}
+
+.blur {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}

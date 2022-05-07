@@ -25,7 +25,7 @@
       <div class="container-fluid">
         <!-- Logotipo -->
         <a class="navbar-brand" href="/index.html">
-          <img class="rounded" src="/assets/images/logo.jpg" height="50" alt="logotipo empresa" width="100%" />
+          <img src="/assets/images/logo.jpg" height="50" alt="logotipo empresa" width="100%" class="rounded" />
         </a>
         <!-- Hamburguesa -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -33,106 +33,92 @@
           <span class="navbar-toggler-icon"></span>
           <!-- Span que sirve para dibujar las 3 líneas de la hamburgesa -->
         </button>
+
         <!-- Start navbar list -->
         <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link btn btn-dark text-light" href="/reserva/">Reserva ya</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="/services/services.html">Servicios</a>
+              <a class="nav-link active" href="">Servicios</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="/about/about.html">Nosotros</a>
             </li>
-
           </ul>
         </div>
         <!-- End navbar list -->
+
       </div>
     </nav>
   </header>
   <!-- End header -->
 
   <!-- Start main -->
-  <main class="bg-white container-md p-5 rounded-bottom shadow">
-
-    <section>
-      <h1 class="display-1 ms-3" style="font-family: 'Alex Brush', cursive;">Sensations</h1>
-      <h2 class="mb-5" style="font-family: 'Alex Brush', cursive;">Restaurante para todas las ocasiones</h2>
+  <main>
+    <section class="bg-white container-md p-5 rounded-bottom shadow">
+      <h1 class="display-1 ms-3" style="font-family: 'Alex Brush', cursive;">Servicios</h1>
+      <h3 class="fs-5 mb-5">Encontrarás todos los servicios que ofrecemos a nuestros clientes. Siempre con los mejores
+        productos.</h3>
+      <hr />
     </section>
 
-    <hr />
-    <section>
-      <div class="mt-5">
-        <div class="card-group">
+    <section class="container mt-5">
+      <div class=" row">
 
-          <div class="bg-light card">
-            <img class="card-img-top img-thumbnail" alt="breackfast"
-              src="https://images.unsplash.com/photo-1495214783159-3503fd1b572d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkyMnwwfDF8c2VhcmNofDE0fHxicmVha2Zhc3R8ZW58MHx8fHwxNjQyNjY4Njg1&ixlib=rb-1.2.1&q=80&w=1080" />
-            <div class="card-body">
-              <h4 class="card-title display-5 text-center" style="font-family: 'Alex Brush', cursive;">Desayunos</h4>
-              <p class="card-text">Pequeño texto descriptivo de los magníficos desayunos que usted puede encontrar en
-                nuestro restaurante.</p>
-
-              <div class="card-text collapse" id="extraText1">
-                <p>Este será un texto más descriptivo sobre el contenido de la sección. Por ejemplo con una lista
-                  desordenada de platos a elegir.</p>
-                <p>Descubre nuestros <a href="/services/services.html" class="link-primary">Servicios</a></p>
-              </div>
-
-              <button class="btn btn-outline-light btn-sm float-end" data-bs-target="#extraText1"
-                data-bs-toggle="collapse" type="button">
-                <img width="32" alt="get more info" src="assets/images/plus.svg" />
-              </button>
-            </div>
+        <div class="bg-opacity-25 bg-warning card col-sm-5 mb-4 shadow">
+          <img alt="breackfast" class="card-img-top img-thumbnail"
+            src="https://images.unsplash.com/photo-1495214783159-3503fd1b572d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkyMnwwfDF8c2VhcmNofDE0fHxicmVha2Zhc3R8ZW58MHx8fHwxNjQyNjY4Njg1&ixlib=rb-1.2.1&q=80&w=1080" />
+          <div class="card-body">
+            <h4 class="card-title display-5 text-center" style="font-family: 'Alex Brush', cursive;">Desayunos</h4>
+            <p class="card-text" style="text-align: justify;">Pequeño texto descriptivo de los magníficos desayunos que
+              usted puede encontrar en nuestro restaurante.</p>
           </div>
-
-          <div class="bg-light card">
-            <img class="card-img-top img-thumbnail" alt="meal"
-              src="https://images.unsplash.com/photo-1608835291093-394b0c943a75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkyMnwwfDF8c2VhcmNofDMwfHxtZWFsfGVufDB8fHx8MTY0MjY2NDA3NQ&ixlib=rb-1.2.1&q=80&w=1080" />
-            <div class="card-body">
-              <h4 class="card-title display-5 text-center" style="font-family: 'Alex Brush', cursive;">Comidas</h4>
-              <p class="card-text">Pequeño texto descriptivo de las magníficas comidas que usted puede encontrar en
-                nuestro restaurante.</p>
-
-              <div class="card-text collapse" id="extraText2">
-                <p>Este será un texto más descriptivo sobre el contenido de la sección. Por ejemplo con una lista
-                  ordenada de platos a elegir.</p>
-                <p>Descubre nuestros <a href="/services/services.html" class="link-primary">Servicios</a></p>
-              </div>
-
-              <button class="btn btn-outline-light btn-sm float-end" data-bs-target="#extraText2"
-                data-bs-toggle="collapse" type="button">
-                <img width="32" alt="get more info" src="assets/images/plus.svg" />
-              </button>
-            </div>
+          <div class="bg-transparent card-footer"><a class="btn btn-outline-warning float-end text-body"
+              href="desayuno.html">Saber más</a>
           </div>
-
-          <div class="bg-light card">
-            <img class="card-img-top img-thumbnail" alt="dinner"
-              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkyMnwwfDF8c2VhcmNofDJ8fGRpbm5lcnxlbnwwfHx8fDE2NDI2NjQwOTk&ixlib=rb-1.2.1&q=80&w=1080" />
-            <div class="card-body">
-              <h4 class="card-title display-5 text-center" style="font-family: 'Alex Brush', cursive;">Cenas</h4>
-              <p class="card-text">Pequeño texto descriptivo de las magníficas cenas que usted puede encontrar en
-                nuestro restaurante.</p>
-
-              <div class="card-text collapse" id="extraText3">
-                <p>Este será un texto más descriptivo sobre el contenido de la sección. Por ejemplo con una lista
-                  ordenada de platos a elegir.</p>
-                <p>Descubre nuestros <a href="/services/services.html" class="link-primary">Servicios</a></p>
-              </div>
-
-              <button class="btn btn-outline-light btn-sm float-end" data-bs-target="#extraText3"
-                data-bs-toggle="collapse" type="button">
-                <img width="32" alt="get more info" src="assets/images/plus.svg" />
-              </button>
-            </div>
-          </div>
-
         </div>
+
+        <div class="bg-opacity-25 bg-warning card col-sm-5 mb-4 offset-sm-1 shadow">
+          <img alt="meal" class="card-img-top img-thumbnail"
+            src="https://images.unsplash.com/photo-1608835291093-394b0c943a75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkyMnwwfDF8c2VhcmNofDMwfHxtZWFsfGVufDB8fHx8MTY0MjY2NDA3NQ&ixlib=rb-1.2.1&q=80&w=1080" />
+          <div class="card-body">
+            <h4 class="card-title display-5 text-center" style="font-family: 'Alex Brush', cursive;">Comidas</h4>
+            <p class="card-text" style="text-align: justify;">Pequeño texto descriptivo de las magníficas comidas que
+              usted puede encontrar en nuestro restaurante.</p>
+          </div>
+          <div class="bg-transparent card-footer"><a class="btn btn-outline-warning float-end text-body"
+              href="comida.html">Saber más</a>
+          </div>
+        </div>
+
+        <div class="bg-opacity-25 bg-warning card col-sm-5 mb-4 offset-sm-1 shadow">
+          <img alt="dinner" class="card-img-top img-thumbnail "
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkyMnwwfDF8c2VhcmNofDJ8fGRpbm5lcnxlbnwwfHx8fDE2NDI2NjQwOTk&ixlib=rb-1.2.1&q=80&w=1080" />
+          <div class="card-body">
+            <h4 class="card-title display-5 text-center" style="font-family: 'Alex Brush', cursive;">Cenas</h4>
+            <p class="card-text" style="text-align: justify;">Pequeño texto descriptivo de las magníficas cenas que
+              usted puede encontrar en nuestro restaurante.</p>
+          </div>
+          <div class="bg-transparent card-footer"><a class="btn btn-outline-warning float-end text-body"
+              href="cena.html">Saber más</a>
+          </div>
+        </div>
+
+        <div class="bg-opacity-25 bg-warning card col-sm-5 mb-4 offset-sm-1 shadow">
+          <img alt="event" class="card-img-top img-thumbnail "
+            src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkyMnwwfDF8c2VhcmNofDJ8fGV2ZW50fGVufDB8fHx8MTY0MzI4NzIzMA&ixlib=rb-1.2.1&q=80&w=1080" />
+          <div class="card-body">
+            <h4 class="card-title display-5 text-center" style="font-family: 'Alex Brush', cursive;">Eventos</h4>
+            <p class="card-text" style="text-align: justify;">Pequeño texto descriptivo de las magníficas cenas que
+              usted puede encontrar en nuestro restaurante.</p>
+          </div>
+          <div class="bg-transparent card-footer"><a class="btn btn-outline-warning float-end text-body"
+              href="evento.html">Saber más</a>
+          </div>
+        </div>
+
       </div>
     </section>
   </main>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <!-- Page title -->
-  <title>Restaurant - Home page</title>
+  <title>Restaurant - Breakfast page</title>
   <!-- Page metadata -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -17,15 +17,14 @@
   <link href="/style.css" rel="stylesheet" />
 </head>
 
-<body class="bg-light">
-
+<body>
   <!-- Start header -->
   <header class="shadow-sm">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <!-- Logotipo -->
         <a class="navbar-brand" href="/index.html">
-          <img class="rounded" src="/assets/images/logo.jpg" height="50" alt="logotipo empresa" width="100%" />
+          <img src="/assets/images/logo.jpg" height="50" alt="logotipo empresa" width="100%" class="rounded" />
         </a>
         <!-- Hamburguesa -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -43,11 +42,9 @@
             <li class="nav-item">
               <a class="nav-link" href="/services/services.html">Servicios</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="/about/about.html">Nosotros</a>
             </li>
-
           </ul>
         </div>
         <!-- End navbar list -->
@@ -57,81 +54,53 @@
   <!-- End header -->
 
   <!-- Start main -->
-  <main class="bg-white container-md p-5 rounded-bottom shadow">
-
-    <section>
-      <h1 class="display-1 ms-3" style="font-family: 'Alex Brush', cursive;">Sensations</h1>
-      <h2 class="mb-5" style="font-family: 'Alex Brush', cursive;">Restaurante para todas las ocasiones</h2>
+  <main class="container-fluid">
+    <section class="bg-transparent container mb-md-5 pb-md-5 pt-5" style="position: relative;">
+      <img
+        src="https://images.unsplash.com/photo-1495214783159-3503fd1b572d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkyMnwwfDF8c2VhcmNofDE0fHxicmVha2Zhc3R8ZW58MHx8fHwxNjQyNjY4Njg1&ixlib=rb-1.2.1&q=80&w=1080"
+        class="blur" style="position: absolute; z-index: -1; left: 0; top: 0;" width="100%" />
+      <div class="bg-dark bg-opacity-50 d-inline-block mt-5 pt-5 text-white">
+        <h3 class="fw-bold h1">Los mejores desayunos</h3>
+        <p class="mb-4">Disfruta de los mejores desayunos en el mejor entorno.</p>
+      </div>
     </section>
-
-    <hr />
-    <section>
-      <div class="mt-5">
-        <div class="card-group">
-
-          <div class="bg-light card">
-            <img class="card-img-top img-thumbnail" alt="breackfast"
-              src="https://images.unsplash.com/photo-1495214783159-3503fd1b572d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkyMnwwfDF8c2VhcmNofDE0fHxicmVha2Zhc3R8ZW58MHx8fHwxNjQyNjY4Njg1&ixlib=rb-1.2.1&q=80&w=1080" />
-            <div class="card-body">
-              <h4 class="card-title display-5 text-center" style="font-family: 'Alex Brush', cursive;">Desayunos</h4>
-              <p class="card-text">Pequeño texto descriptivo de los magníficos desayunos que usted puede encontrar en
-                nuestro restaurante.</p>
-
-              <div class="card-text collapse" id="extraText1">
-                <p>Este será un texto más descriptivo sobre el contenido de la sección. Por ejemplo con una lista
-                  desordenada de platos a elegir.</p>
-                <p>Descubre nuestros <a href="/services/services.html" class="link-primary">Servicios</a></p>
-              </div>
-
-              <button class="btn btn-outline-light btn-sm float-end" data-bs-target="#extraText1"
-                data-bs-toggle="collapse" type="button">
-                <img width="32" alt="get more info" src="assets/images/plus.svg" />
-              </button>
-            </div>
-          </div>
-
-          <div class="bg-light card">
-            <img class="card-img-top img-thumbnail" alt="meal"
-              src="https://images.unsplash.com/photo-1608835291093-394b0c943a75?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkyMnwwfDF8c2VhcmNofDMwfHxtZWFsfGVufDB8fHx8MTY0MjY2NDA3NQ&ixlib=rb-1.2.1&q=80&w=1080" />
-            <div class="card-body">
-              <h4 class="card-title display-5 text-center" style="font-family: 'Alex Brush', cursive;">Comidas</h4>
-              <p class="card-text">Pequeño texto descriptivo de las magníficas comidas que usted puede encontrar en
-                nuestro restaurante.</p>
-
-              <div class="card-text collapse" id="extraText2">
-                <p>Este será un texto más descriptivo sobre el contenido de la sección. Por ejemplo con una lista
-                  ordenada de platos a elegir.</p>
-                <p>Descubre nuestros <a href="/services/services.html" class="link-primary">Servicios</a></p>
-              </div>
-
-              <button class="btn btn-outline-light btn-sm float-end" data-bs-target="#extraText2"
-                data-bs-toggle="collapse" type="button">
-                <img width="32" alt="get more info" src="assets/images/plus.svg" />
-              </button>
-            </div>
-          </div>
-
-          <div class="bg-light card">
-            <img class="card-img-top img-thumbnail" alt="dinner"
-              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkyMnwwfDF8c2VhcmNofDJ8fGRpbm5lcnxlbnwwfHx8fDE2NDI2NjQwOTk&ixlib=rb-1.2.1&q=80&w=1080" />
-            <div class="card-body">
-              <h4 class="card-title display-5 text-center" style="font-family: 'Alex Brush', cursive;">Cenas</h4>
-              <p class="card-text">Pequeño texto descriptivo de las magníficas cenas que usted puede encontrar en
-                nuestro restaurante.</p>
-
-              <div class="card-text collapse" id="extraText3">
-                <p>Este será un texto más descriptivo sobre el contenido de la sección. Por ejemplo con una lista
-                  ordenada de platos a elegir.</p>
-                <p>Descubre nuestros <a href="/services/services.html" class="link-primary">Servicios</a></p>
-              </div>
-
-              <button class="btn btn-outline-light btn-sm float-end" data-bs-target="#extraText3"
-                data-bs-toggle="collapse" type="button">
-                <img width="32" alt="get more info" src="assets/images/plus.svg" />
-              </button>
-            </div>
-          </div>
-
+    <div>
+      <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%"
+        class="bg-transparent d-block text-light" height="70" fill="currentColor" preserveAspectRatio="none">
+        <path d="M 100 100 V 0 L 0 100" />
+      </svg>
+    </div>
+    <section class="bg-light pt-5 text-center text-white">
+      <div class="container pb-4 pt-4 text-dark">
+        <div class="col-lg-9 mb-5 me-auto ms-auto">
+          <h3 class="display-5 fw-bold text-warning" style="text-shadow: 2px 2px #000000;">Desayuno 1</h3>
+          <p class="fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac sagittis neque, vel egestas est. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices
+            sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit
+            nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget
+            semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci.
+            Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
+        </div>
+      </div>
+    </section>
+    <div>
+      <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%"
+        class="bg-light d-block text-dark" height="70" fill="currentColor" preserveAspectRatio="none">
+        <path d="M 100 100 V 0 L 0 100" />
+      </svg>
+    </div>
+    <section class="bg-dark pt-5 text-center text-light">
+      <div class="container pb-4 pt-4">
+        <div class="col-lg-9 mb-5 me-auto ms-auto">
+          <h3 class="display-5 fw-bold text-warning">Desayuno 2</h3>
+          <p class="fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac sagittis neque, vel egestas est. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar faucibus neque, nec rhoncus nunc ultrices
+            sit amet. Curabitur ac sagittis neque, vel egestas est. Aenean elementum, erat at aliquet hendrerit, elit
+            nisl posuere tortor, id suscipit diam dui sed nisi. Morbi sollicitudin massa vel tortor consequat, eget
+            semper nisl fringilla. Maecenas at hendrerit odio. Sed in mi eu quam suscipit bibendum quis at orci.
+            Pellentesque fermentum nisl purus, et iaculis lectus pharetra sit amet.</p>
         </div>
       </div>
     </section>
@@ -139,7 +108,7 @@
   <!-- End main -->
 
   <!-- Start footer -->
-  <footer class="bg-dark mt-5 pt-5 px-3 row text-white">
+  <footer class="bg-dark pt-5 px-3 row text-white">
     <!-- Start footer - 1 column -->
     <div class="col-3">
       <a href="/index.html" class="d-flex align-items-center mb-3 text-decoration-none"> <img
@@ -217,7 +186,6 @@
     <!-- End footer - columns -->
   </footer>
   <!-- End footer -->
-
   <!-- Bootstrap js dependencies -->
   <script src="/assets/js/popper.min.js"></script>
   <script src="/bootstrap/js/bootstrap.min.js"></script>
