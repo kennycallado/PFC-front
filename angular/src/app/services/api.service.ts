@@ -9,6 +9,7 @@ import { Booking } from '../models/booking';
   providedIn: 'root'
 })
 export class ApiService {
+  /* la url debería venir desde una variable de entorno */
   private apiUrl: string = "https://api.sensacion.kennycallado.dev/api/"
   private available: string = "table/available?date="
 
@@ -22,6 +23,7 @@ export class ApiService {
     let headers = new HttpHeaders();
     headers = headers.set('content-type', 'application/json');
 
+    /* esto debería usar variable */
     return this.http.post<any>("https://api.sensacion.kennycallado.dev/api/booking", JSON.stringify(booking), { headers })
   }
 }
